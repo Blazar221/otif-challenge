@@ -1,0 +1,61 @@
+$ot-purple: #5932EA;
+$ot-blue: #2196f3;
+$ot-darkblue: #0000ff;
+$ot-aqua: #35c9e0;
+$ot-black: #121212;
+$ot-green: #4caf50;
+$ot-red: #ff3d00;
+$ot-teal: #0d7588;
+$ot-white: #ffffff;
+
+$ot-gray5: #686868;
+$ot-gray4: #b2b2b2;
+$ot-gray3: #e0e0e0;
+$ot-gray2: #efefef;
+$ot-gray1: #fafafa;
+//custom color used by text and stroke
+$ot-text1: $ot-gray5;
+$ot-text2: $ot-gray4;
+$ot-stroke1: $ot-gray3;
+$ot-light: $ot-gray1;
+
+$ot-theme-colors: (
+  "ot-darkblue": $ot-darkblue,
+  "ot-purple": $ot-purple,
+  "ot-blue": $ot-blue,
+  "ot-aqua": $ot-aqua,
+  "ot-black": $ot-black,
+  "ot-green": $ot-green,
+  "ot-red": $ot-red,
+  "ot-teal": $ot-teal,
+  "ot-white": $ot-white,
+
+  "ot-gray5": $ot-gray5,
+  "ot-gray4": $ot-gray4,
+  "ot-gray3": $ot-gray3,
+  "ot-gray2": $ot-gray2,
+  "ot-gray1": $ot-gray1,
+);
+
+//override bootstrap default color
+$primary: $ot-purple;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $ot-aqua;
+$warning: $yellow !default;
+$danger: $ot-red !default;
+$light: $ot-light !default;
+$dark: $ot-black !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$theme-colors: map-merge($theme-colors, $ot-theme-colors);
